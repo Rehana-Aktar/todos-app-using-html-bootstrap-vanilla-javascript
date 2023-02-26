@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">TODOs List</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample02"
+          aria-controls="navbarsExample02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-4">
+      <div class="mb-3">
+        <label for="todo-title" class="form-label h2">TODO Title</label>
+        <input type="text" class="form-control" id="todo-title" />
+      </div>
+      <div class="mb-3">
+        <label for="todo-content" class="form-label h2">TODO Content</label>
+        <textarea class="form-control" id="todo-content" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-success" id="submit-btn">Add TODO</button>
+      <button type="button" class="mx-4 btn btn-danger" id="clear-todos-btn">Clear TODOs</button>
+    </div>
+    <div class="container todo-items">
+      <!-- <div class="card my-2" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">TODO title</h5>
+          <p class="card-text">TODO content</p>
+          <a href="#" class="btn btn-danger">Remove TODO</a>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
